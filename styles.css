@@ -60,6 +60,7 @@ navigation-menu
 .nav-links li a:hover {
   border-bottom: 2px solid rgb(81, 153, 208);
 }
+
 .nav-links li {
   margin-left: 0.6em;
   font-size: 1.3rem;
@@ -71,11 +72,21 @@ navigation-menu
   width: 20%;
 }
 .navLogo h2 {
-  color: rgb(81, 153, 208);
-  text-transform: capitalize;
+  color: rgb(221, 228, 92);
+}
+.navLogo h2 span {
+  color: rgb(90, 64, 141);
+  font-family: inherit;
+  font-weight: bolder;
+  font-weight: 900;
 }
 .burger {
   cursor: pointer;
+}
+kbd {
+  color: rgb(42, 138, 182);
+  font-weight: 900;
+  font-size: 1rem;
 }
 .burger div {
   height: 4px;
@@ -116,6 +127,7 @@ SECTION
   font-weight: 400;
   pointer-events: none;
   border-bottom: 1px solid black;
+  font-weight: 500;
 }
 .searchForm label::after {
   content: "";
@@ -222,3 +234,5 @@ SECTION
 #Github-repositories li:hover a {
   color: #1756b1;
 }
+
+/* responsive */
