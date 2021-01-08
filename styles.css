@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  /* background: #666665; */
+  font-family: "Poppins", sans-serif;
+  height: 100%;
+}
+/* ============
+  TYPOGRAPHY
+=============== */
+img {
+  max-width: 100%;
+  background-size: cover;
+}
+a {
+  text-decoration: none;
+  color: rgb(120, 172, 221);
+}
+
+p {
+  /* margin: 0; */
+}
+h1,
+h2 {
+  font-weight: 300;
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+header {
+  background-color: rgb(22, 19, 19);
+}
+li {
+  list-style: none;
+}
+
+/* ==========
+navigation-menu
+============== */
+.container-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-container {
+  height: 10vh;
+  overflow-y: auto;
+  padding: 12px;
+}
+.nav-links {
+  display: flex;
+}
+
+.nav-links li a:hover {
+  border-bottom: 2px solid rgb(81, 153, 208);
+}
+.nav-links li {
+  margin-left: 0.6em;
+  font-size: 1.3rem;
+}
+.navLogo a {
+  padding-bottom: 0.7em;
+}
+.navLo {
+  width: 20%;
+}
+.navLogo h2 {
+  color: rgb(81, 153, 208);
+  text-transform: capitalize;
+}
+.burger {
+  cursor: pointer;
+}
+.burger div {
+  height: 4px;
+  width: 25px;
+  background-color: white;
+  margin: 0.2em;
+}
+/* ========
+SECTION
+============= */
+
+.searchForm {
+  max-width: 50%;
+  position: relative;
+  height: 40px;
+  margin: 1em auto;
+  overflow: hidden;
+}
+.searchForm input {
+  width: 100%;
+  height: 100%;
+  color: #1756b1;
+  padding-top: 20px;
+  border: none;
+  position: absolute;
+  bottom: 0px;
+  left: 4px;
+  right: 0;
+  top: 0;
+  outline: none;
+}
+.searchForm label {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  font-weight: 400;
+  pointer-events: none;
+  border-bottom: 1px solid black;
+}
+.searchForm label::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -1px;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid rgb(85, 150, 193);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+.content-name {
+  position: absolute;
+  bottom: -5px;
+  left: 0px;
+  transition: all 0.3s ease;
+}
+.searchForm input:focus + .label-name .content-name,
+.searchForm input:valid + .label-name .content-name {
+  transform: translateY(-130%);
+  font-size: 0.9rem;
+  color: #1756b1;
+  background-color: white;
+}
+.searchForm input:focus + .label-name:after,
+.searchForm input:valid,
+.searchForm input:valid + .label-name::after {
+  transform: translateX(0%);
+}
+.git-body {
+  max-width: 800px;
+  margin: auto;
+  background: #70e1f5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffd194,
+    #70e1f5
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffd194,
+    #70e1f5
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  padding: 12px;
+  border-radius: 12px;
+  box-shadow: 4px 2px 5px rgba(160, 161, 167, 0.5);
+}
+.github {
+  display: flex;
+}
+.github-profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.github-profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.github-profile h3.githubprofile-name {
+  flex: 1;
+  text-transform: capitalize;
+  margin: 0;
+  margin-left: 1em;
+}
+.githubuser-details {
+  margin-left: 2em;
+  margin-bottom: 0.6em;
+}
+
+#Github-repositories {
+  margin-left: 0.6em;
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  flex-wrap: wrap;
+}
+#Github-repositories li {
+  background: #485563; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #29323c,
+    #485563
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #29323c,
+    #485563
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 5px;
+  border-radius: 6px;
+  margin: 3px;
+}
+#Github-repositories a {
+  color: white;
+}
+#Github-repositories li:hover {
+  background: #000;
+}
+#Github-repositories li:hover a {
+  color: #1756b1;
+}

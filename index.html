@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>responsive-site</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <nav class="nav-container container-flex">
+          <div class="navLogo">
+            <h2>OneCode<small>code</small></h2>
+          </div>
+          <ul class="nav-links">
+            <!-- <li class="active"><a href="#">Home</a></li> -->
+            <!-- <li><a href="#">About</a></li>
+            <li><a href="#">Users</a></li> -->
+          </ul>
+          <div class="burger">
+            <div class="line-1"></div>
+            <div class="line-2"></div>
+            <div class="line-3"></div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="container">
+      <div class="searchForm">
+        <form id="form">
+          <input
+            type="text"
+            name="name"
+            autocomplete="off"
+            id="search-user"
+            required
+          />
+          <label for="name" class="label-name">
+            <span class="content-name">Search User</span>
+          </label>
+        </form>
+      </div>
+      <div id="loaded-data"></div>
+    </section>
+    <script src="./app.js"></script>
+  </body>
+</html>
